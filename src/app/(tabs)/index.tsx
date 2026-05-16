@@ -1,33 +1,56 @@
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { Text, View, StyleSheet, FlatList, ActivityIndicator, Dimensions, TouchableOpacity } from 'react-native';
 import { useEffect, useState } from 'react';
-import { getNearbyMeals } from './meals.';
-import { Meal } from './Meal';
+import { getNearbyMealsFromApiAsync } from '@/src/apis/httpRequests';
+import { Meal } from '../../types/Meal';
+import { useNavigation } from '@/.expo/types/router';
+import { Button } from '@react-navigation/elements';
+
+const  widthScreen = Dimensions.get('window').width - 10;
 
 export default function Index() {
-
+//const navigation = useNavigation();
+const [isLoading, setLoading] = useState(true);
 const [meals, setMeals] = useState<Meal[]>([]);
   useEffect(() => {
+    const timer = setTimeout(() => {
     async function loadMeals() {
-      const data = await getNearbyMeals();
+      try { 
+      const data = await getNearbyMealsFromApiAsync();
       setMeals(data);
-    }
-    loadMeals();
+    } catch (error) {
+      console.error(error);
+    }   finally {
+      setLoading(false);
+    }}
+    loadMeals();},2000);
+  
+    return () => clearTimeout(timer);
   }, []);
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
-      <FlatList
-        data={meals}
-        renderItem={({ item }) => (
-          <View style={styles.mealCard}>
+    <View style={styles.container}> 
+      <Text style={styles.text}>Nearby meals</Text>
+      {isLoading ? (
+        <ActivityIndicator />
+      ) : (
+        <FlatList
+          data={meals}
+          numColumns={2}
+          columnWrapperStyle={styles.columnStyle}
+          renderItem={({ item }) => (
+            <TouchableOpacity
+            key={item.id}
+            onPress={() => console.log("Hello, World!")}
+            >
+            <View style={styles.mealCard}>
             <Text style={styles.text}>ID: {item.id}</Text>
             <Text style={styles.text}>Name: {item.name}</Text>
             <Text style={styles.text}>Restaurant: {item.restaurantName}</Text>
             <Text style={styles.text}>Calories: {item.calories}</Text>
-            <Text style={styles.text}>Protein: {item.proteinGrams}g</Text>
+            <Text style={styles.text}>Protein: {item.proteinGrams}</Text>
           </View>
+          </TouchableOpacity>
         )}
-      />
+      />)}
     </View>
   );
 }
@@ -43,12 +66,18 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   mealCard: {
+    height: 150,
     marginBottom: 16,
     padding: 12,
     borderWidth: 1,
     borderColor: '#fff',
     borderRadius: 8,
-    width: '90%',
+    width: widthScreen / 2 - 10,
+    marginTop: 20,
+  },
+  columnStyle: {
+    gap: 10,  
+    justifyContent: 'space-between',
   },
   button: {
     fontSize: 20,
