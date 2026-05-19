@@ -2,17 +2,18 @@ import { Text, View, StyleSheet, FlatList, ActivityIndicator, Dimensions, Toucha
 import { useEffect, useState } from 'react';
 import { getNearbyMealsFromApiAsync } from '@/src/apis/httpRequests';
 import { Meal } from '../../types/Meal';
-import { useNavigation } from '@/.expo/types/router';
-import { Button } from '@react-navigation/elements';
+import { useRouter } from 'expo-router';
 
 const  widthScreen = Dimensions.get('window').width - 10;
 
 export default function Index() {
-//const navigation = useNavigation();
+
+//Router for navigation
+const router = useRouter();
 const [isLoading, setLoading] = useState(true);
 const [meals, setMeals] = useState<Meal[]>([]);
+
   useEffect(() => {
-    const timer = setTimeout(() => {
     async function loadMeals() {
       try { 
       const data = await getNearbyMealsFromApiAsync();
@@ -22,9 +23,7 @@ const [meals, setMeals] = useState<Meal[]>([]);
     }   finally {
       setLoading(false);
     }}
-    loadMeals();},2000);
-  
-    return () => clearTimeout(timer);
+    loadMeals();
   }, []);
   return (
     <View style={styles.container}> 
@@ -39,22 +38,25 @@ const [meals, setMeals] = useState<Meal[]>([]);
           renderItem={({ item }) => (
             <TouchableOpacity
             key={item.id}
-            onPress={() => console.log("Hello, World!")}
-            >
-            <View style={styles.mealCard}>
-            <Text style={styles.text}>ID: {item.id}</Text>
-            <Text style={styles.text}>Name: {item.name}</Text>
-            <Text style={styles.text}>Restaurant: {item.restaurantName}</Text>
-            <Text style={styles.text}>Calories: {item.calories}</Text>
-            <Text style={styles.text}>Protein: {item.proteinGrams}</Text>
-          </View>
-          </TouchableOpacity>
+            onPress={() =>  router.navigate({ pathname: '/mealDetails', params: { id: item.id } })}>
+              <View style={styles.mealCard}>
+                <Text style={styles.text}>ID: {item.id}</Text>
+                <Text style={styles.text}>Name: {item.name}</Text>
+                <Text style={styles.text}>Restaurant: {item.restaurantName}</Text>
+                <Text style={styles.text}>Calories: {item.calories}</Text>
+                <Text style={styles.text}>Protein: {item.proteinGrams}</Text>
+              </View>
+            </TouchableOpacity>
         )}
       />)}
     </View>
   );
 }
 
+
+
+
+//Styles for the component
 const styles = StyleSheet.create({
   container: {
     flex: 1,
