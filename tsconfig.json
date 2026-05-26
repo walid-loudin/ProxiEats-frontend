@@ -1,8 +1,9 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "expo/tsconfig.base.json",
   "compilerOptions": {
     "module": "esnext",
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "strict": true,
     "paths": {
       "@/*": [
@@ -15,5 +16,11 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "android",
+    "ios",
+    "my-expo-app"
   ]
 }

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B2374FAF9DAEF4B5F83542 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D2B9F7BEACE6C3356B9CA /* PrivacyInfo.xcprivacy */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		3A2CDCFA118D506B1C59CF15 /* libPods-ProxiEatsfrontend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 935F08AF1F363ADA11EE27DD /* libPods-ProxiEatsfrontend.a */; };
+		3CF297D91EE26DE89EE868DE /* libPods-ProxiEatsfrontend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59594C242519B163882B75D8 /* libPods-ProxiEatsfrontend.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		50A4D8AB4AF728FD50FA8D08 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = FA750D07AC6DF195F4339383 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		E3665C057433E14A81A0AB4E /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88911158755D56BD18F9EC0C /* ExpoModulesProvider.swift */; };
+		D9A3EC8CC6005FECC638E6DC /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5318A6B36CBF1E85B0631FE /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,16 +20,16 @@
 		13B07F961A680F5B00A75B9A /* ProxiEatsfrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxiEatsfrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ProxiEatsfrontend/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProxiEatsfrontend/Info.plist; sourceTree = "<group>"; };
-		3C26D0B7FBBB0ED73A2BC23A /* Pods-ProxiEatsfrontend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxiEatsfrontend.debug.xcconfig"; path = "Target Support Files/Pods-ProxiEatsfrontend/Pods-ProxiEatsfrontend.debug.xcconfig"; sourceTree = "<group>"; };
-		88911158755D56BD18F9EC0C /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ProxiEatsfrontend/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		935F08AF1F363ADA11EE27DD /* libPods-ProxiEatsfrontend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProxiEatsfrontend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		193432655C31C0CE8392E7CD /* Pods-ProxiEatsfrontend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxiEatsfrontend.debug.xcconfig"; path = "Target Support Files/Pods-ProxiEatsfrontend/Pods-ProxiEatsfrontend.debug.xcconfig"; sourceTree = "<group>"; };
+		3F0D2B9F7BEACE6C3356B9CA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = ProxiEatsfrontend/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		59594C242519B163882B75D8 /* libPods-ProxiEatsfrontend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProxiEatsfrontend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71ACF99AD30041AF4A1DC09E /* Pods-ProxiEatsfrontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxiEatsfrontend.release.xcconfig"; path = "Target Support Files/Pods-ProxiEatsfrontend/Pods-ProxiEatsfrontend.release.xcconfig"; sourceTree = "<group>"; };
+		A5318A6B36CBF1E85B0631FE /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ProxiEatsfrontend/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = ProxiEatsfrontend/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ProxiEatsfrontend/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* ProxiEatsfrontend-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ProxiEatsfrontend-Bridging-Header.h"; path = "ProxiEatsfrontend/ProxiEatsfrontend-Bridging-Header.h"; sourceTree = "<group>"; };
-		F39A013E9F6826B220BD91B4 /* Pods-ProxiEatsfrontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxiEatsfrontend.release.xcconfig"; path = "Target Support Files/Pods-ProxiEatsfrontend/Pods-ProxiEatsfrontend.release.xcconfig"; sourceTree = "<group>"; };
-		FA750D07AC6DF195F4339383 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ProxiEatsfrontend/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2CDCFA118D506B1C59CF15 /* libPods-ProxiEatsfrontend.a in Frameworks */,
+				3CF297D91EE26DE89EE868DE /* libPods-ProxiEatsfrontend.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,26 +53,36 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				FA750D07AC6DF195F4339383 /* PrivacyInfo.xcprivacy */,
+				3F0D2B9F7BEACE6C3356B9CA /* PrivacyInfo.xcprivacy */,
 			);
 			name = ProxiEatsfrontend;
 			sourceTree = "<group>";
 		};
-		1C8CBB1A8126A2EFD4DD0A4D /* ExpoModulesProviders */ = {
+		1D4BB854D41902C5E2B206D5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C52FB12A876F9AD8CA80777F /* ProxiEatsfrontend */,
+				193432655C31C0CE8392E7CD /* Pods-ProxiEatsfrontend.debug.xcconfig */,
+				71ACF99AD30041AF4A1DC09E /* Pods-ProxiEatsfrontend.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				935F08AF1F363ADA11EE27DD /* libPods-ProxiEatsfrontend.a */,
+				59594C242519B163882B75D8 /* libPods-ProxiEatsfrontend.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D034EB1AFDA0C12EF8C64C7 /* ProxiEatsfrontend */ = {
+			isa = PBXGroup;
+			children = (
+				A5318A6B36CBF1E85B0631FE /* ExpoModulesProvider.swift */,
+			);
+			name = ProxiEatsfrontend;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -89,8 +99,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9F9D0069C511D3815A78BD0A /* Pods */,
-				1C8CBB1A8126A2EFD4DD0A4D /* ExpoModulesProviders */,
+				1D4BB854D41902C5E2B206D5 /* Pods */,
+				E4BD619C60163E12B6DC343D /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -105,15 +115,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F9D0069C511D3815A78BD0A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3C26D0B7FBBB0ED73A2BC23A /* Pods-ProxiEatsfrontend.debug.xcconfig */,
-				F39A013E9F6826B220BD91B4 /* Pods-ProxiEatsfrontend.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,12 +124,12 @@
 			path = ProxiEatsfrontend/Supporting;
 			sourceTree = "<group>";
 		};
-		C52FB12A876F9AD8CA80777F /* ProxiEatsfrontend */ = {
+		E4BD619C60163E12B6DC343D /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				88911158755D56BD18F9EC0C /* ExpoModulesProvider.swift */,
+				7D034EB1AFDA0C12EF8C64C7 /* ProxiEatsfrontend */,
 			);
-			name = ProxiEatsfrontend;
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ProxiEatsfrontend" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				A0A4C8BE91CD809A11865EF8 /* [Expo] Configure project */,
+				96AE30EB928B5C6833F1E573 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				F7E4D6F7D2DF4479DE358322 /* [CP] Embed Pods Frameworks */,
+				D11B2BE653C08DE486A831DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				50A4D8AB4AF728FD50FA8D08 /* PrivacyInfo.xcprivacy in Resources */,
+				03B2374FAF9DAEF4B5F83542 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +276,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProxiEatsfrontend/Pods-ProxiEatsfrontend-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0A4C8BE91CD809A11865EF8 /* [Expo] Configure project */ = {
+		96AE30EB928B5C6833F1E573 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -299,7 +300,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-ProxiEatsfrontend/expo-configure-project.sh\"\n";
 		};
-		F7E4D6F7D2DF4479DE358322 /* [CP] Embed Pods Frameworks */ = {
+		D11B2BE653C08DE486A831DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				E3665C057433E14A81A0AB4E /* ExpoModulesProvider.swift in Sources */,
+				D9A3EC8CC6005FECC638E6DC /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,13 +339,12 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C26D0B7FBBB0ED73A2BC23A /* Pods-ProxiEatsfrontend.debug.xcconfig */;
+			baseConfigurationReference = 193432655C31C0CE8392E7CD /* Pods-ProxiEatsfrontend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ProxiEatsfrontend/ProxiEatsfrontend.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JY54DT9FTX;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -375,13 +375,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F39A013E9F6826B220BD91B4 /* Pods-ProxiEatsfrontend.release.xcconfig */;
+			baseConfigurationReference = 71ACF99AD30041AF4A1DC09E /* Pods-ProxiEatsfrontend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ProxiEatsfrontend/ProxiEatsfrontend.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JY54DT9FTX;
 				INFOPLIST_FILE = ProxiEatsfrontend/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

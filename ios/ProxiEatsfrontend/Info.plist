@@ -51,6 +51,10 @@
       <key>NSAllowsLocalNetworking</key>
       <true/>
     </dict>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Allow $(PRODUCT_NAME) to use your location.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Allow $(PRODUCT_NAME) to access your location</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>This app uses your location to provide accurate nearby restaurant suggestions.</string>
     <key>NSUserActivityTypes</key>

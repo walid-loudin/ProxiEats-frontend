@@ -1,14 +1,19 @@
 import { getNearbyMealDetailsFromApiAsync } from '@/src/apis/httpRequests';
 import { MealDetail } from '@/src/types/MealDetail';
 import { useLocalSearchParams } from 'expo-router';
-import {StyleSheet, View, Text, ActivityIndicator} from 'react-native';
+import { View, Text, ActivityIndicator, Button} from 'react-native';
 import { useEffect, useState } from 'react';
+import { styles } from '../../styles/globalStyles';
+import { useRouter } from "expo-router";
+
+
 
 export default function MealDetails() {
 const { id } = useLocalSearchParams();
 const mealId = parseInt(id as string, 10);
 const [isLoading, setLoading] = useState(true);
 const [meals, setMeals] = useState<MealDetail | null>(null);
+const router = useRouter();
 
   useEffect(() => {
     async function loadMeals() {
@@ -24,8 +29,13 @@ const [meals, setMeals] = useState<MealDetail | null>(null);
 
   }, [mealId]);
   return (
-
-    <View style={styles.container}>           
+    <View style={styles.container}>
+      <Button title="Go Back" onPress={() =>
+                router.navigate({
+                  pathname: "..",
+                })
+              } />
+    <View style={styles.container}>  
     {isLoading ? (
         <ActivityIndicator />
       ) : (
@@ -39,30 +49,6 @@ const [meals, setMeals] = useState<MealDetail | null>(null);
           <Text style={styles.text}>{meals?.fatGrams}</Text>
           <Text style={styles.text}>{meals?.carbsGrams}</Text>
         </View>
-      )}</View>
+      )}</View></View>
   );
 }
-
-
-
-//Styles for the component
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#25292e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-  },
-  columnStyle: {
-    gap: 10,  
-    justifyContent: 'space-between',
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: 'underline',
-    color: '#fff',
-  },
-});

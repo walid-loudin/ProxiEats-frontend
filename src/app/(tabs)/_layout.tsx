@@ -1,5 +1,4 @@
 import { Tabs } from 'expo-router';
-
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function TabLayout() {
@@ -20,12 +19,24 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Nearby Meals',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
+            <Ionicons name={focused ? 'fast-food' : 'fast-food-outline'} color={color} size={24} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="mealDetails"
+        options={{
+          title: 'Meal Details',
+          href: null,
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'information-circle-sharp' : 'information-circle-outline'} color={color} size={24} />
           ),
         }}
       />
     </Tabs>
+    
   );
 }

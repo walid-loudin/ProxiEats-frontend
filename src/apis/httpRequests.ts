@@ -1,7 +1,8 @@
-export const getNearbyMealsFromApiAsync = async () => {
+import { MealTag } from "../types/MealTag";
+export const getNearbyMealsFromApiAsync = async (filter: string) => {
   try {
     const response = await fetch(
-      'http://localhost:5000/api/meals/nearby?lat=43.6481&lng=-79.3854&radiusMeters=1000',
+      `http://localhost:5000/api/meals/nearby?lat=43.6481&lng=-79.3854&radiusMeters=1000&filter=${filter}`,
     );
     const json = await response.json();
     
